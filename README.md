@@ -117,9 +117,6 @@ Documentation
 ### Returns ###
 - (object) This Element.
 
-Demo
-----
-[http://mooshell.net/cQhC2/](http://mooshell.net/cQhC2/)
 
 License
 -------
