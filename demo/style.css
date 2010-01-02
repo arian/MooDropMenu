@@ -1,0 +1,83 @@
+html {
+	background: #666;
+}
+
+body {
+	margin: 20px 10%;
+	font-family: Tahoma,Geneva,Kalimati,sans-serif;
+	font-size: 0.8em;
+	background: #FFF;
+	padding: 20px;
+	border: 1px solid #111;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+}
+
+::selection {
+	background: #fd9800;
+	color: #2d77e0;
+}
+::-moz-selection {
+	background: #fd9800;
+	color: #2d77e0;
+}
+
+a {
+	color: #2d77e0;
+	padding: 1px 3px;
+}
+
+a:hover {
+	background: #2d77e0;
+	color: white;
+}
+
+p {
+	background: #f5f5f5;
+	padding: 5px;
+}
+
+code {
+	border: 1px solid #666;
+	background: #EEE;
+	padding: 1px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	font-size: 1.2em;
+}
+
+pre {
+	border: 1px solid #666;
+	background: #EEE;
+	padding: 5px;
+	margin: 20px;
+	border-radius: 10px;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+	font-size: 1.2em;
+}
+
+h1 {
+	color: #2d77e0;
+	font-size: 2em;
+	text-shadow: 1px 1px 1px #666;
+	-webkit-transform: rotate(-2deg);
+	-moz-transform: rotate(-2deg); 
+	margin-bottom: 30px;
+}
+
+h2 {
+	font-size: 1.6em;	
+	margin-bottom: 30px;
+}
+
+h3 {
+	font-size: 1.2em;
+}
+
+h2, h3 {
+	color: #fd9800;	
+	text-shadow: 1px 1px 1px #333;
+}
