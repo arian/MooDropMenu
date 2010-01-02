@@ -84,8 +84,7 @@ And then initialize the menu
 Documentation
 -------------
 
-Class: MooDropMenu
-- - - - - - - - - -
+## Class: MooDropMenu ##
 
 ### Syntax ###
 
@@ -104,8 +103,8 @@ Class: MooDropMenu
 - close - (function) The function which close a menu
 - initialize - (function) The function which to execute when the menu part (ul) get initialized
 
-Native: Element.MooDropMenu
-- - - - - - - - - -
+## Native: Element.MooDropMenu ##
+
 
 ### Syntax ###
 
