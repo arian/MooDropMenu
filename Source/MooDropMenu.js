@@ -8,7 +8,7 @@ authors:
 - Arian Stolwijk
 
 requires:
-- core/1.2.4: '*'
+  core/1.2.4: [Class.Extras,Element.Style]
 
 provides: [MooDropMenu,Element.MooDropMenu]
 
@@ -72,7 +72,7 @@ var MooDropMenu = new Class({
 		}
 		else {
 			level = 0;
-			this.menu = $(menu);
+			this.menu = document.id(menu);
 		}
 		
 		// grab all of the menus children - LI's in this case		
@@ -97,7 +97,7 @@ var MooDropMenu = new Class({
 /* So you can do like this $('nav').MooDropMenu(); or even $('nav').MooDropMenu().setStyle('border',1); */
 Element.implement({
 	MooDropMenu: function (options){
-		new MooDropMenu(this,options);
+		this.store('MooDropMenu',new MooDropMenu(this,options));
 		return this;
 	}
 });
