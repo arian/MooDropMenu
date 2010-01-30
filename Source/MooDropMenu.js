@@ -8,7 +8,7 @@ authors:
 - Arian Stolwijk
 
 requires:
-  core/1.2.4: [Class.Extras,Element.Style]
+  core/1.2.4: [Class.Extras,Element.Style,Element.Event]
 
 provides: [MooDropMenu,Element.MooDropMenu]
 
