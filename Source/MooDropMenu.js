@@ -32,7 +32,8 @@ var MooDropMenu = new Class({
 			// set menu to hide
 			el.set('opacity',0);
 		},
-		mouseoutDelay: 200
+		mouseoutDelay: 200,
+		mouseoverDelay: 0
 	},
 	
 	initialize: function(menu, options, level){
@@ -49,17 +50,21 @@ var MooDropMenu = new Class({
 					// Set the DropDownOpen status to true			
 					this.menu.pel.mel.store('DropDownOpen',true);
 					
-					// Fire the event to open the menu
-					this.fireEvent('open',this.menu.pel.mel);
-					
 					// Clear the timer of the delay
 					$clear(this.timer);
+					// Fire the event to open the menu
+					this.timer = (function(){
+						this.fireEvent('open',this.menu.pel.mel);
+					}).delay(this.options.mouseoverDelay,this);		
+					
 				}.bind(this),
 				
 				'mouseout': function(){
 					// Set the DropDownOpen status to false
 					this.menu.pel.mel.store('DropDownOpen',false);
 					
+					// Clear the timer of the delay
+					$clear(this.timer);
 					// Build a delay before the onClose event get fired
 					this.timer = (function(){
 						if(!this.menu.pel.mel.retrieve('DropDownOpen')){
