@@ -97,6 +97,8 @@ Documentation
 
 #### Options ####
 - mouseoutDelay - (number: defaults to 200) The time (delay) before the onClose event get fired
+- mouseoverDelay - (number: defaults to 0) The time (delay) before the onOpen event get fired
+
 
 #### Events ####
 - open - (function) The function which opens a part of the menu
