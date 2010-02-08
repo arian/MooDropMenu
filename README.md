@@ -111,7 +111,7 @@ Documentation
 ### Syntax ###
 
 	#JS
-	$('myElement').dropMenu[options]);
+	$('myElement').dropMenu([options]);
 	
 ### Arguments ###
 1. options - (object,optional) An object with options for the drop menu. See the MooDropMenu options
