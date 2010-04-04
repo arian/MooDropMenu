@@ -48,12 +48,12 @@ And then initialize the menu
 		
 		
 		// The simple way
-		$('nav').dropMenu();
+		$('nav').MooDropMenu();
 		
 		
 		
 		// The more advanced way
-		$('nav').dropMenu({
+		$('nav').MooDropMenu({
 			onOpen: function(el){
 				el.fade('in')
 			},
@@ -89,7 +89,7 @@ Documentation
 ### Syntax ###
 
 	#JS
-	var dropMenu = new Awf.DropMenu(element, [options]);
+	var dropMenu = new MooDropMenu(element, [options]);
 	
 #### Arguments ####
 1. element - (element,string) An Element or the string id of an Element to apply the drop menu to.
@@ -111,7 +111,7 @@ Documentation
 ### Syntax ###
 
 	#JS
-	$('myElement').dropMenu([options]);
+	$('myElement').MooDropMenu([options]);
 	
 ### Arguments ###
 1. options - (object,optional) An object with options for the drop menu. See the MooDropMenu options
