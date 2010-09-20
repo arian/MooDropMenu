@@ -10,7 +10,7 @@
 }
 
 #nav li {
-	position: relative; 
+	position: relative;
 	float: left;
 	padding: 5px;
 }
@@ -20,8 +20,8 @@
 	position: absolute;
 	top: 26px;
 	left: 10px;
-	margin: 0; 
-	padding: 0; 
+	margin: 0;
+	padding: 0;
 	list-style: none;
 	width: 136px;
 	border: 1px solid #AAA;
@@ -31,7 +31,16 @@
 	box-shadow: 1px 1px 5px #AAA;
 }
 
-#nav ul li { 
+
+#nav .open {
+	display: block;
+}
+
+#nav .close {
+	display: none;
+}
+
+#nav ul li {
 	float: none;
 	padding: 0;
 }
@@ -50,7 +59,7 @@
 	background: #CDCDCD;
 }
 
-#nav ul ul { 
+#nav ul ul {
 	left: 137px;
 	_left: 0;
 	top: 0;
