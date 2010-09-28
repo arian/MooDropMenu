@@ -100,7 +100,8 @@ Documentation
 - mouseoverDelay - (number: defaults to 0) The time (delay) before the onOpen event get fired
 - listSelector - (string: defaults to `ul`) The list tagname
 - itemSelector - (string: defaults to `li`) The items tagname
-
+- openEvent - (string: defaults to 'mouseenter') The event name when the menu should open
+- closeEvent - (string: defaults to 'mouseleave') The event name when the menu should close
 
 #### Events ####
 - open - (function) The function which opens a part of the menu
